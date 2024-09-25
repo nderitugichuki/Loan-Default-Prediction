@@ -3,7 +3,7 @@ Loan Default Prediction Dataset
 Dataset Description
 This dataset contains detailed information about loans issued by a financial institution. The dataset can be used for predictive modeling to understand the factors that contribute to loan defaults. It consists of 255,347 entries with 18 columns, covering various borrower demographics, financial details, and loan-specific attributes.
 
-File Overview
+##File Overview
 Filename: Loan_default.csv
 Size: 35.1 MB
 Number of entries: 255,347
@@ -52,19 +52,20 @@ python
 Copy code
 import pandas as pd
 
-# Load the dataset
+## Load the dataset
 file_path = 'Loan_default.csv'
 loan_data = pd.read_csv(file_path)
 
-# Display the first few rows
+## Display the first few rows
 print(loan_data.head())
 Repository Structure
 Loan_default.csv: The dataset file
+ipynb:Contains the code documentation
 README.md: This readme file
 requirements.txt: List of Python packages required for analysis (to be added based on your project needs)
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Acknowledgements
+##Acknowledgements
 We would like to acknowledge the financial institution that provided this dataset for educational and predictive modeling purposes.
 
