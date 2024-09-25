@@ -1,71 +1,75 @@
-# Loan-Default-Prediction
-Loan Default Prediction Dataset
-Dataset Description
-This dataset contains detailed information about loans issued by a financial institution. The dataset can be used for predictive modeling to understand the factors that contribute to loan defaults. It consists of 255,347 entries with 18 columns, covering various borrower demographics, financial details, and loan-specific attributes.
+# Loan Default Prediction
 
-##File Overview
-Filename: Loan_default.csv
-Size: 35.1 MB
-Number of entries: 255,347
-Number of columns: 18
-Columns
-LoanID: Unique identifier for each loan (object)
-Age: Age of the borrower (int)
-Income: Annual income of the borrower (int)
-LoanAmount: Amount of loan issued (int)
-CreditScore: Credit score of the borrower (int)
-MonthsEmployed: Number of months the borrower has been employed (int)
-NumCreditLines: Number of open credit lines the borrower has (int)
-InterestRate: Interest rate of the loan (float)
-LoanTerm: Term of the loan in months (int)
-DTIRatio: Debt-to-income ratio of the borrower (float)
-Education: Education level of the borrower (object)
-EmploymentType: Employment status of the borrower (object)
-MaritalStatus: Marital status of the borrower (object)
-HasMortgage: Indicates if the borrower has an existing mortgage (object)
-HasDependents: Indicates if the borrower has dependents (object)
-LoanPurpose: Purpose of the loan (object)
-HasCoSigner: Indicates if the loan has a cosigner (object)
-Default: Target variable indicating if the borrower defaulted (1) or not (0) (int)
-Usage
-This dataset can be used for various analyses, including but not limited to:
+## Dataset Description
+The Loan Default Prediction dataset contains detailed information about loans issued by a financial institution. It can be utilized for predictive modelling to understand the factors contributing to loan defaults. The dataset comprises 255,347 entries and 18 columns covering various borrower demographics, financial details, and loan-specific attributes.
 
-Predictive modeling to identify the likelihood of loan defaults
-Exploratory data analysis to understand the characteristics of borrowers and loans
-Feature engineering and selection for machine learning models
-Statistical analysis to determine significant factors affecting loan defaults
-Getting Started
-Clone the repository:
+### File Overview
+- **Filename**: `Loan_default.csv`
+- **Size**: 35.1 MB
+- **Number of Entries**: 255,347
+- **Number of Columns**: 18
 
-sh
-Copy code
-git clone https://github.com/yourusername/loan-default-prediction.git
-cd loan-default-prediction
-Install required packages: Ensure you have the necessary Python packages installed. You can use the following command to install the dependencies:
+### Columns
+1. **LoanID**: Unique identifier for each loan (object)
+2. **Age**: Age of the borrower (int)
+3. **Income**: Annual income of the borrower (int)
+4. **LoanAmount**: Amount of loan issued (int)
+5. **CreditScore**: Credit score of the borrower (int)
+6. **MonthsEmployed**: Number of months the borrower has been employed (int)
+7. **NumCreditLines**: Number of open credit lines the borrower has (int)
+8. **InterestRate**: Interest rate of the loan (float)
+9. **LoanTerm**: Term of the loan in months (int)
+10. **DTIRatio**: Debt-to-income ratio of the borrower (float)
+11. **Education**: Education level of the borrower (object)
+12. **EmploymentType**: Employment status of the borrower (object)
+13. **MaritalStatus**: Marital status of the borrower (object)
+14. **HasMortgage**: Indicates if the borrower has an existing mortgage (object)
+15. **HasDependents**: Indicates if the borrower has dependents (object)
+16. **LoanPurpose**: Purpose of the loan (object)
+17. **HasCoSigner**: Indicates if the loan has a cosigner (object)
+18. **Default**: Target variable indicating if the borrower defaulted (1) or not (0) (int)
 
-sh
-Copy code
-pip install -r requirements.txt
-Load the dataset: Use the following Python code to load and inspect the dataset:
+## Usage
+This dataset can be used for various analyses, including:
+- Predictive modeling to identify the likelihood of loan defaults.
+- Exploratory data analysis to understand borrower and loan characteristics.
+- Feature engineering and selection for machine learning models.
+- Statistical analysis to determine significant factors affecting loan defaults.
 
-python
-Copy code
-import pandas as pd
+## Getting Started
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/loan-default-prediction.git
+   cd loan-default-prediction
+   ```
 
-## Load the dataset
-file_path = 'Loan_default.csv'
-loan_data = pd.read_csv(file_path)
+2. **Install Required Packages**:
+   Ensure you have the necessary Python packages installed. You can use the following command to install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Display the first few rows
-print(loan_data.head())
-Repository Structure
-Loan_default.csv: The dataset file
-ipynb:Contains the code documentation
-README.md: This readme file
-requirements.txt: List of Python packages required for analysis (to be added based on your project needs)
-License
+3. **Load the Dataset**:
+   Use the following Python code to load and inspect the dataset:
+   ```python
+   import pandas as pd
+
+   # Load the dataset
+   file_path = 'Loan_default.csv'
+   loan_data = pd.read_csv(file_path)
+
+   # Display the first few rows
+   print(loan_data.head())
+   ```
+
+## Repository Structure
+- **Loan_default.csv**: The dataset file.
+- **ipynb**: Contains the code documentation.
+- **README.md**: This README file.
+- **requirements.txt**: List of Python packages required for analysis (to be added based on your project needs).
+
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-##Acknowledgements
+## Acknowledgements
 We would like to acknowledge the financial institution that provided this dataset for educational and predictive modeling purposes.
-
